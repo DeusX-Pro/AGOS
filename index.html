@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/aos.css" />
+    <link rel="stylesheet" href="styles/odometer-theme-default.css" />
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <title>AGOS Technology</title>
+  </head>
+
+  <body class="z-[100] bg-white">
+    <!-- Navbar started -->
+    <header
+      class="sticky left-0 top-0 z-50 flex h-nav-2 items-center bg-white shadow-sm"
+    >
+      <nav class="container flex items-center justify-between px-3 2xl:px-0">
+        <div>
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="Homelist" class="shrink-0" />
+          </a>
+        </div>
+
+        <div class="flex items-center gap-x-6 text-nature-500">
+          <menu
+            class="mr-2.5 hidden items-center gap-x-3 text-sm font-semibold hover:*:text-primary hover:*:duration-300 md:flex lg:gap-x-5 lg:text-[17px] xl:space-x-6"
+          >
+            <li>
+              <a class="group relative" href="index.html"
+                >Home
+                <div
+                  aria-hidden="true"
+                  class="absolute top-6 h-[2px] w-0 bg-gradient-to-r from-primary to-primary-400 transition-all duration-500 group-hover:w-[40px]"
+                ></div>
+              </a>
+            </li>
+
+            <li
+              role="button"
+              id="servicesDropdownButton"
+              data-dropdown-toggle="services-dropdown-hover"
+              data-dropdown-trigger="hover"
+            >
+              <a class="group relative" role="button" href="#services"
+                >Services
+                <i class="fa-solid fa-chevron-down text-sm font-normal"></i>
+                <div
+                  aria-hidden="true"
+                  class="absolute top-6 h-[2px] w-0 bg-gradient-to-r from-primary to-primary-400 transition-all duration-500 group-hover:w-[40px]"
+                ></div>
+              </a>
+            </li>
+
+            <div
+              id="services-dropdown-hover"
+              class="z-10 hidden w-60 rounded-xl bg-white shadow"
+            >
+              <menu
+                aria-labelledby="servicesDropdownButton"
+                class="w-full p-2.5 font-semibold text-gray-700 *:px-5 *:py-2.5"
+              >
+                <li
+                  class="group w-full overflow-hidden rounded-lg hover:bg-primary hover:text-white"
+                >
+                  <a
+                    class="relative transition-all duration-500 before:absolute before:left-0 before:top-1/2 before:mr-1.5 before:-translate-x-10 before:-translate-y-1/2 before:text-white before:content-['-'] group-hover:pl-5 group-hover:before:translate-x-0 group-hover:before:delay-150"
+                    href="#real-estate"
+                    >Real Estate</a
+                  >
+                </li>
+                <li
+                  class="group w-full overflow-hidden rounded-lg hover:bg-primary hover:text-white"
+                >
+                  <a
+                    class="relative transition-all duration-500 before:absolute before:left-0 before:top-1/2 before:mr-1.5 before:-translate-x-10 before:-translate-y-1/2 before:text-white before:content-['-'] group-hover:pl-5 group-hover:before:translate-x-0 group-hover:before:delay-150"
+                    href="#construction"
+                    >Construction</a
+                  >
+                </li>
+                <li
+                  class="group w-full overflow-hidden rounded-lg hover:bg-primary hover:text-white"
+                >
+                  <a
+                    class="relative transition-all duration-500 before:absolute before:left-0 before:top-1/2 before:mr-1.5 before:-translate-x-10 before:-translate-y-1/2 before:text-white before:content-['-'] group-hover:pl-5 group-hover:before:translate-x-0 group-hover:before:delay-150"
+                    href="#technology"
+                    >Technology Services</a
+                  >
+                </li>
+              </menu>
+            </div>
+
+            <li>
+              <a class="group relative" href="#about"
+                >About
+                <div
+                  aria-hidden="true"
+                  class="absolute top-6 h-[2px] w-0 bg-gradient-to-r from-primary to-primary-400 transition-all duration-500 group-hover:w-[40px]"
+                ></div
+              ></a>
+            </li>
+
+            <li>
+              <a class="group relative" href="#projects"
+                >Projects
+                <div
+                  aria-hidden="true"
+                  class="absolute top-6 h-[2px] w-0 bg-gradient-to-r from-primary to-primary-400 transition-all duration-500 group-hover:w-[40px]"
+                ></div
+              ></a>
+            </li>
+
+            <li>
+              <a class="group relative" href="contact.html"
+                >Contact
+                <div
+                  aria-hidden="true"
+                  class="absolute top-6 h-[2px] w-0 bg-gradient-to-r from-primary to-primary-400 transition-all duration-500 group-hover:w-[40px]"
+                ></div
+              ></a>
+            </li>
+          </menu>
+
+          <button
+            class="hidden size-[60px] bg-primary text-white md:block"
+            type="button"
+            data-drawer-target="drawer-right-example"
+            data-drawer-show="drawer-right-example"
+            data-drawer-placement="right"
+            aria-controls="drawer-right-example"
+          >
+            <i class="fa-solid fa-lines-leaning text-2xl"></i>
+          </button>
+          <button
+            class="md:hidden"
+            type="button"
+            data-drawer-target="responsive-menu"
+            data-drawer-show="responsive-menu"
+            aria-controls="responsive-menu"
+          >
+            <svg
+              class="size-6"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="200px"
+              width="200px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path fill="none" d="M0 0h24v24H0V0z"></path>
+              <path
+                d="M3 18h13v-2H3v2zm0-5h10v-2H3v2zm0-7v2h13V6H3zm18 9.59L17.42 12 21 8.41 19.59 7l-5 5 5 5L21 15.59z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar ended -->
+
+    <!-- Hero section start -->
+    <section
+      class="w-full overflow-hidden bg-new-100 px-3 pb-6 md:pb-8 lg:pb-12 xl:pb-16 2xl:px-0"
+    >
+      <div class="relative w-full">
+        <div
+          class="container z-10 flex flex-1 flex-col items-center justify-center gap-y-3 py-16 md:items-start md:gap-y-4 md:py-28 lg:gap-y-6 lg:py-36 xl:gap-y-8 xl:py-40 2xl:py-52"
+        >
+          <h1
+            data-aos="fade-right"
+            class="heading-hero w-fit text-center md:text-start"
+          >
+            Finding the <br />
+            right property
+          </h1>
+          <p
+            data-aos="fade-right"
+            data-aos-delay="150"
+            class="w-fit text-center font-poppins text-base font-normal text-nature-300 md:text-start lg:text-lg xl:text-xl 2xl:text-2xl"
+          >
+            Find and book a great experience.
+          </p>
+          <a
+            data-aos="fade-right"
+            data-aos-delay="300"
+            href="#"
+            class="w-fit rounded-full bg-primary px-3 py-2.5 text-center text-white md:py-3 lg:px-5 lg:py-4 lg:text-xl lg:font-bold xl:mt-2 xl:px-7 xl:py-5"
+            >Start your search</a
+          >
+        </div>
+
+        <!-- bg overlay -->
+        <div
+          class="absolute inset-y-0 right-0 hidden bg-right bg-no-repeat md:block lg:w-[60%] xl:w-2/3 2xl:bg-[url('/assets/images/image-112.png')]"
+          data-aos="fade-left"
+        >
+          <img
+            src="assets/images/image-112.png"
+            class="h-full w-full 2xl:hidden"
+            alt=""
+          />
+        </div>
+      </div>
+
+    
+    <!-- Hero section end -->
+
+    <!-- Best place section start -->
+   <!-- Services Overview section start -->
+<section class="section-padding bg-white px-3 xl:px-0" id="services">
+   <div class="container flex flex-col items-center justify-center">
+      <h2 data-aos="zoom-in-up" class="heading-2">
+         Our Core Services
+      </h2>
+      <p
+         data-aos="zoom-in-up"
+         data-aos-delay="150"
+         class="heading-tagline mb-6 mt-3.5 md:mb-8 lg:mb-10 lg:mt-5 xl:mb-12"
+      >
+         From real estate solutions to cutting-edge construction and technology services,<br />
+         we deliver excellence across all sectors with proven expertise
+      </p>
+
+      <div
+         class="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8 lg:gap-10"
+      >
+         <!-- Card 1 - Real Estate -->
+         <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            class="group flex flex-col items-center rounded-2xl border-2 border-gray-100 p-8 transition-all duration-300 hover:border-primary hover:shadow-xl"
+         >
+            <div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-primary-50">
+               <i class="fa-solid fa-building text-5xl text-primary"></i>
+            </div>
+            <a href="#real-estate" class="mb-3 text-2xl font-bold text-nature-600 transition-colors hover:text-primary">Real Estate</a>
+            <p class="mb-4 text-center font-poppins text-base text-nature-300">
+               Comprehensive property solutions including sales, leasing, and property management services
+            </p>
+            <div class="mt-auto flex items-center gap-2 text-primary">
+               <i class="fa-solid fa-arrow-right"></i>
+               <span class="font-medium">Learn More</span>
+            </div>
+         </div>
+
+         <!-- Card 2 - Construction -->
+         <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+            class="group flex flex-col items-center rounded-2xl border-2 border-gray-100 p-8 transition-all duration-300 hover:border-primary hover:shadow-xl"
+         >
+            <div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-secondary-50">
+               <i class="fa-solid fa-helmet-safety text-5xl text-secondary"></i>
+            </div>
+            <a href="#construction" class="mb-3 text-2xl font-bold text-nature-600 transition-colors hover:text-secondary">Construction</a>
+            <p class="mb-4 text-center font-poppins text-base text-nature-300">
+               Quality construction services from residential projects to large-scale commercial developments
+            </p>
+            <div class="mt-auto flex items-center gap-2 text-secondary">
+               <i class="fa-solid fa-arrow-right"></i>
+               <span class="font-medium">Learn More</span>
+            </div>
+         </div>
+
+         <!-- Card 3 - Technology Services -->
+         <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-out"
+            class="group flex flex-col items-center rounded-2xl border-2 border-gray-100 p-8 transition-all duration-300 hover:border-primary hover:shadow-xl md:col-span-2 lg:col-span-1"
+         >
+            <div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-primary-50">
+               <i class="fa-solid fa-microchip text-5xl text-primary"></i>
+            </div>
+            <a href="#technology" class="mb-3 text-2xl font-bold text-nature-600 transition-colors hover:text-primary">Technology Services</a>
+            <p class="mb-4 text-center font-poppins text-base text-nature-300">
+               Innovative tech solutions including software development, IT consulting, and digital transformation
+            </p>
+            <div class="mt-auto flex items-center gap-2 text-primary">
+               <i class="fa-solid fa-arrow-right"></i>
+               <span class="font-medium">Learn More</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Services Overview section end -->
+    <!-- Best place section end -->
+
+    <!-- Feature Destination section started -->
+   <!-- Featured Projects section started -->
+<section
+   class="bg-white pb-10 pt-6 md:pb-16 md:pt-8 lg:pb-20 lg:pt-12 xl:pb-24 xl:pt-16 2xl:pb-28"
+   id="projects"
+>
+   <div
+      class="container flex flex-col items-center justify-center px-3 2xl:px-0"
+   >
+      <div class="space-y-2 md:space-y-3 lg:space-y-5">
+         <h2 data-aos="zoom-in-up" class="heading-2">Featured Projects</h2>
+         <p data-aos="zoom-in-up" data-aos-delay="150" class="heading-tagline">
+            Showcasing excellence across real estate, construction, and technology solutions
+         </p>
+      </div>
+
+      <div
+         class="mt-8 grid gap-4 *:max-w-[410px] md:mt-10 md:gap-7 lg:mt-12 lg:grid-cols-3 xl:mt-16 2xl:mt-20"
+      >
+         <!-- card 1 - Real Estate -->
+         <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            class="rounded-[20px] bg-new-100 transition-all duration-300 ease-in-out hover:shadow-shadow7"
+         >
+            <div
+               class="group relative h-auto w-full overflow-hidden rounded-t-[20px]"
+            >
+               <div
+                  class="absolute right-0 top-0 z-10 rounded-tr-[20px] bg-primary px-3.5 py-1.5 font-semibold text-white"
+               >
+                  Real Estate
+               </div>
+               <img
+                  src="assets/images/image-45.png"
+                  class="h-full max-h-[250px] w-full object-cover transition-all duration-700 ease-in-out group-hover:scale-[1.15]"
+                  alt="Commercial property project"
+               />
+            </div>
+            <div class="p-8">
+               <div class="mb-3 flex items-center gap-x-2">
+                  <i class="fa-solid fa-calendar text-primary"></i>
+                  <span class="font-poppins text-sm font-medium text-new-800">Completed 2024</span>
+               </div>
+               <h4 class="mb-5 text-2xl font-medium leading-8 text-new-900">
+                  Luxury Residential Complex
+               </h4>
+               <div class="mb-7 flex items-center gap-x-[10px]">
+                  <i class="fa-solid fa-map-pin text-secondary"></i>
+                  <p class="font-poppins text-sm font-medium text-new-800">
+                     Lagos, Nigeria
+                  </p>
+               </div>
+               <hr />
+               <div class="mt-6 grid grid-cols-2 items-center">
+                  <div class="flex flex-col gap-y-2">
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-building text-primary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >50 Units</span
+                        >
+                     </div>
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-check-circle text-primary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >Sold Out</span
+                        >
+                     </div>
+                  </div>
+
+                  <div class="flex items-center justify-end">
+                     
+                       <a href="#"
+                        class="flex items-center gap-x-1.5 transition-all duration-300 ease-in-out hover:gap-x-4 md:gap-x-2 lg:gap-x-2.5"
+                     >
+                        <span class="font-poppins text-sm font-medium text-new-900"
+                           >View Project</span
+                        >
+                        <i class="fa-solid fa-arrow-right text-primary"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- card 2 - Construction -->
+         <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="100"
+            class="rounded-[20px] bg-new-100 transition-all duration-300 ease-in-out hover:shadow-shadow7"
+         >
+            <div
+               class="group relative h-auto w-full overflow-hidden rounded-t-[20px]"
+            >
+               <div
+                  class="absolute right-0 top-0 z-10 rounded-tr-[20px] bg-secondary px-3.5 py-1.5 font-semibold text-white"
+               >
+                  Construction
+               </div>
+               <img
+                  src="assets/images/image-46.png"
+                  class="h-full max-h-[250px] w-full object-cover transition-all duration-700 ease-in-out group-hover:scale-[1.15]"
+                  alt="Construction project"
+               />
+            </div>
+            <div class="p-8">
+               <div class="mb-3 flex items-center gap-x-2">
+                  <i class="fa-solid fa-calendar text-secondary"></i>
+                  <span class="font-poppins text-sm font-medium text-new-800">Ongoing</span>
+               </div>
+               <h4 class="mb-5 text-2xl font-medium leading-8 text-new-900">
+                  Corporate Office Building
+               </h4>
+               <div class="mb-7 flex items-center gap-x-[10px]">
+                  <i class="fa-solid fa-map-pin text-secondary"></i>
+                  <p class="font-poppins text-sm font-medium text-new-800">
+                     Abuja, Nigeria
+                  </p>
+               </div>
+               <hr />
+               <div class="mt-6 grid grid-cols-2 items-center">
+                  <div class="flex flex-col gap-y-2">
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-layer-group text-secondary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >8 Floors</span
+                        >
+                     </div>
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-hard-hat text-secondary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >Commercial</span
+                        >
+                     </div>
+                  </div>
+
+                  <div class="flex items-center justify-end">
+                     
+                      <a  href="#"
+                        class="flex items-center gap-x-1.5 transition-all duration-300 ease-in-out hover:gap-x-4 md:gap-x-2 lg:gap-x-2.5"
+                     >
+                        <span class="font-poppins text-sm font-medium text-new-900"
+                           >View Project</span
+                        >
+                        <i class="fa-solid fa-arrow-right text-secondary"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- card 3 - Technology -->
+         <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="150"
+            class="rounded-[20px] bg-new-100 transition-all duration-300 ease-in-out hover:shadow-shadow7"
+         >
+            <div
+               class="group relative h-auto w-full overflow-hidden rounded-t-[20px]"
+            >
+               <div
+                  class="absolute right-0 top-0 z-10 rounded-tr-[20px] bg-primary px-3.5 py-1.5 font-semibold text-white"
+               >
+                  Technology
+               </div>
+               <img
+                  src="assets/images/image-47.png"
+                  class="h-full max-h-[250px] w-full object-cover transition-all duration-700 ease-in-out group-hover:scale-[1.15]"
+                  alt="Technology project"
+               />
+            </div>
+            <div class="p-8">
+               <div class="mb-3 flex items-center gap-x-2">
+                  <i class="fa-solid fa-calendar text-primary"></i>
+                  <span class="font-poppins text-sm font-medium text-new-800">Completed 2024</span>
+               </div>
+               <h4 class="mb-5 text-2xl font-medium leading-8 text-new-900">
+                  Property Management System
+               </h4>
+               <div class="mb-7 flex items-center gap-x-[10px]">
+                  <i class="fa-solid fa-laptop-code text-secondary"></i>
+                  <p class="font-poppins text-sm font-medium text-new-800">
+                     Web & Mobile App
+                  </p>
+               </div>
+               <hr />
+               <div class="mt-6 grid grid-cols-2 items-center">
+                  <div class="flex flex-col gap-y-2">
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-code text-primary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >Full Stack</span
+                        >
+                     </div>
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-users text-primary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >5000+ Users</span
+                        >
+                     </div>
+                  </div>
+
+                  <div class="flex items-center justify-end">
+                     
+                      <a  href="#"
+                        class="flex items-center gap-x-1.5 transition-all duration-300 ease-in-out hover:gap-x-4 md:gap-x-2 lg:gap-x-2.5"
+                     >
+                        <span class="font-poppins text-sm font-medium text-new-900"
+                           >View Project</span
+                        >
+                        <i class="fa-solid fa-arrow-right text-primary"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- card 4 - Real Estate -->
+         <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="200"
+            class="rounded-[20px] bg-new-100 transition-all duration-300 ease-in-out hover:shadow-shadow7"
+         >
+            <div
+               class="group relative h-auto w-full overflow-hidden rounded-t-[20px]"
+            >
+               <div
+                  class="absolute right-0 top-0 z-10 rounded-tr-[20px] bg-primary px-3.5 py-1.5 font-semibold text-white"
+               >
+                  Real Estate
+               </div>
+               <img
+                  src="assets/images/image-48.png"
+                  class="h-full max-h-[250px] w-full object-cover transition-all duration-700 ease-in-out group-hover:scale-[1.15]"
+                  alt="Real estate project"
+               />
+            </div>
+            <div class="p-8">
+               <div class="mb-3 flex items-center gap-x-2">
+                  <i class="fa-solid fa-calendar text-primary"></i>
+                  <span class="font-poppins text-sm font-medium text-new-800">Available Now</span>
+               </div>
+               <h4 class="mb-5 text-2xl font-medium leading-8 text-new-900">
+                  Waterfront Estate Development
+               </h4>
+               <div class="mb-7 flex items-center gap-x-[10px]">
+                  <i class="fa-solid fa-map-pin text-secondary"></i>
+                  <p class="font-poppins text-sm font-medium text-new-800">
+                     Lekki, Lagos
+                  </p>
+               </div>
+               <hr />
+               <div class="mt-6 grid grid-cols-2 items-center">
+                  <div class="flex flex-col gap-y-2">
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-home text-primary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >120 Plots</span
+                        >
+                     </div>
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-star text-primary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >Premium</span
+                        >
+                     </div>
+                  </div>
+
+                  <div class="flex items-center justify-end">
+                     
+                      <a  href="#"
+                        class="flex items-center gap-x-1.5 transition-all duration-300 ease-in-out hover:gap-x-4 md:gap-x-2 lg:gap-x-2.5"
+                     >
+                        <span class="font-poppins text-sm font-medium text-new-900"
+                           >View Project</span
+                        >
+                        <i class="fa-solid fa-arrow-right text-primary"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- card 5 - Construction -->
+         <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="250"
+            class="rounded-[20px] bg-new-100 transition-all duration-300 ease-in-out hover:shadow-shadow7"
+         >
+            <div
+               class="group relative h-auto w-full overflow-hidden rounded-t-[20px]"
+            >
+               <div
+                  class="absolute right-0 top-0 z-10 rounded-tr-[20px] bg-secondary px-3.5 py-1.5 font-semibold text-white"
+               >
+                  Construction
+               </div>
+               <img
+                  src="assets/images/image-49.png"
+                  class="h-full max-h-[250px] w-full object-cover transition-all duration-700 ease-in-out group-hover:scale-[1.15]"
+                  alt="Construction project"
+               />
+            </div>
+            <div class="p-8">
+               <div class="mb-3 flex items-center gap-x-2">
+                  <i class="fa-solid fa-calendar text-secondary"></i>
+                  <span class="font-poppins text-sm font-medium text-new-800">Completed 2023</span>
+               </div>
+               <h4 class="mb-5 text-2xl font-medium leading-8 text-new-900">
+                  Shopping Mall & Recreation Center
+               </h4>
+               <div class="mb-7 flex items-center gap-x-[10px]">
+                  <i class="fa-solid fa-map-pin text-secondary"></i>
+                  <p class="font-poppins text-sm font-medium text-new-800">
+                     Port Harcourt, Nigeria
+                  </p>
+               </div>
+               <hr />
+               <div class="mt-6 grid grid-cols-2 items-center">
+                  <div class="flex flex-col gap-y-2">
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-store text-secondary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >Mixed Use</span
+                        >
+                     </div>
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-trophy text-secondary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >Award Winner</span
+                        >
+                     </div>
+                  </div>
+
+                  <div class="flex items-center justify-end">
+                     
+                      <a  href="#"
+                        class="flex items-center gap-x-1.5 transition-all duration-300 ease-in-out hover:gap-x-4 md:gap-x-2 lg:gap-x-2.5"
+                     >
+                        <span class="font-poppins text-sm font-medium text-new-900"
+                           >View Project</span
+                        >
+                        <i class="fa-solid fa-arrow-right text-secondary"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- card 6 - Technology -->
+         <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="300"
+            class="rounded-[20px] bg-new-100 transition-all duration-300 ease-in-out hover:shadow-shadow7"
+         >
+            <div
+               class="group relative h-auto w-full overflow-hidden rounded-t-[20px]"
+            >
+               <div
+                  class="absolute right-0 top-0 z-10 rounded-tr-[20px] bg-primary px-3.5 py-1.5 font-semibold text-white"
+               >
+                  Technology
+               </div>
+               <img
+                  src="assets/images/image-50.png"
+                  class="h-full max-h-[250px] w-full object-cover transition-all duration-700 ease-in-out group-hover:scale-[1.15]"
+                  alt="Technology project"
+               />
+            </div>
+            <div class="p-8">
+               <div class="mb-3 flex items-center gap-x-2">
+                  <i class="fa-solid fa-calendar text-primary"></i>
+                  <span class="font-poppins text-sm font-medium text-new-800">Ongoing</span>
+               </div>
+               <h4 class="mb-5 text-2xl font-medium leading-8 text-new-900">
+                  Smart Building IoT Solution
+               </h4>
+               <div class="mb-7 flex items-center gap-x-[10px]">
+                  <i class="fa-solid fa-microchip text-secondary"></i>
+                  <p class="font-poppins text-sm font-medium text-new-800">
+                     IoT & AI Integration
+                  </p>
+               </div>
+               <hr />
+               <div class="mt-6 grid grid-cols-2 items-center">
+                  <div class="flex flex-col gap-y-2">
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-wifi text-primary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >IoT System</span
+                        >
+                     </div>
+                     <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-bolt text-primary"></i>
+                        <span class="font-poppins text-sm font-normal text-new-900"
+                           >Energy Save</span
+                        >
+                     </div>
+                  </div>
+
+                  <div class="flex items-center justify-end">
+                     
+                     <a   href="#"
+                        class="flex items-center gap-x-1.5 transition-all duration-300 ease-in-out hover:gap-x-4 md:gap-x-2 lg:gap-x-2.5"
+                     >
+                        <span class="font-poppins text-sm font-medium text-new-900"
+                           >View Project</span
+                        >
+                        <i class="fa-solid fa-arrow-right text-primary"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Featured Projects section end -->
+    <!-- Feature Destination section end -->
+
+    <!-- How it works section start -->
+    <!-- How We Work section start -->
+<section class="section-padding overflow-hidden">
+   <div class="container flex flex-col items-center justify-center">
+      <h2 data-aos="zoom-in-up" class="heading-2 mb-5">How We Work</h2>
+      <p data-aos="zoom-in-up" data-aos-delay="150" class="heading-tagline">
+         Our streamlined approach ensures quality delivery across real estate,
+         <br />construction, and technology projects
+      </p>
+      <div
+         class="mt-14 flex w-full flex-col items-center gap-0 gap-y-5 px-3 md:flex-row md:gap-y-0 2xl:px-0"
+      >
+         <!-- card 1 - Consultation -->
+         <div
+            data-aos="zoom-in-right"
+            class="how-it-works-card group duration-200 ease-in-out hover:shadow-shadow6 hover:transition-all"
+         >
+            <div class="how-it-works__rounded-1"></div>
+            <div class="how-it-works__rounded-2"></div>
+            <div
+               class="how-it-works_img-container text-primary hover:transition-all hover:duration-200 hover:ease-in-out group-hover:text-secondary"
+            >
+               <i class="fa-solid fa-comments text-5xl"></i>
+            </div>
+
+            <div class="content">
+               <h4>Consultation</h4>
+               <p>
+                  We begin by understanding your needs and goals through detailed
+                  consultation and assessment.
+               </p>
+            </div>
+         </div>
+         <!-- line -->
+         <div class="h-[3px] w-full flex-1 bg-primary"></div>
+         <!-- card 2 - Planning -->
+         <div
+            data-aos="zoom-in"
+            class="how-it-works-card group duration-200 ease-in-out hover:shadow-shadow6 hover:transition-all"
+         >
+            <div class="how-it-works__rounded-1"></div>
+            <div class="how-it-works__rounded-2"></div>
+            <div
+               class="how-it-works_img-container text-primary hover:transition-all hover:duration-200 hover:ease-in-out group-hover:text-secondary"
+            >
+               <i class="fa-solid fa-clipboard-list text-5xl"></i>
+            </div>
+
+            <div class="content">
+               <h4>Planning & Design</h4>
+               <p>
+                  Our experts develop comprehensive plans and designs tailored to
+                  your specific requirements.
+               </p>
+            </div>
+         </div>
+         <!-- line -->
+         <div class="h-[3px] w-full flex-1 bg-primary"></div>
+         <!-- card 3 - Execution -->
+         <div
+            data-aos="zoom-in-left"
+            class="how-it-works-card group duration-200 ease-in-out hover:shadow-shadow6 hover:transition-all"
+         >
+            <div class="how-it-works__rounded-1"></div>
+            <div class="how-it-works__rounded-2"></div>
+            <div
+               class="how-it-works_img-container text-primary hover:transition-all hover:duration-200 hover:ease-in-out group-hover:text-secondary"
+            >
+               <i class="fa-solid fa-rocket text-5xl"></i>
+            </div>
+
+            <div class="content">
+               <h4>Execution & Delivery</h4>
+               <p>
+                  We execute the project with precision and deliver exceptional
+                  results on time.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- How We Work section end -->
+    <!-- How it works section end -->
+
+    <!-- User Activity section start -->
+    <section
+      class="section-padding container flex items-center justify-around px-3 2xl:px-0"
+      id="h1-cta"
+    >
+      <!-- cta 1 -->
+      <div class="cta-content">
+        <div class="cta-img">
+          <img src="assets/icons/prize.svg" alt="Homelist_cta" />
+        </div>
+        <div class="cta-data">
+          <h2 className="hidden">
+            <span class="odometer" id="h1-award">55</span
+            ><span class="text-primary">M</span>
+          </h2>
+          <p>Award Winning</p>
+        </div>
+      </div>
+
+      <!-- cta 2 -->
+      <div class="cta-content">
+        <div class="cta-img">
+          <img src="assets/icons/building.svg" alt="Homelist_cta" />
+        </div>
+        <div class="cta-data">
+          <h2>
+            <span id="h1-property" class="odometer">50</span
+            ><span class="text-secondary">K</span>
+          </h2>
+          <p>Property Ready</p>
+        </div>
+      </div>
+
+      <!-- cta 3 -->
+      <div class="cta-content">
+        <div class="cta-img">
+          <img src="assets/icons/happy-customer.svg" alt="Homelist_cta" />
+        </div>
+        <div class="cta-data">
+          <h2>
+            <span id="h1-clients" class="odometer">50</span
+            ><span class="text-primary">M</span>
+          </h2>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </section>
+    <!-- User Activity section end -->
+
+    <!-- Testimonial section start -->
+   <!-- Why Choose Us section start -->
+<section
+   class="section-padding container flex flex-col items-center justify-center px-3 2xl:px-0"
+>
+   <h2 data-aos="zoom-in-up" class="heading-2 mb-2.5 md:mb-3.5 lg:mb-5">
+      Why Choose AGOS Technology
+   </h2>
+   <p data-aos="zoom-in-up" data-aos-delay="150" class="heading-tagline">
+      Your trusted partner for comprehensive real estate, construction, <br />
+      and technology solutions across Nigeria
+   </p>
+   <div
+      class="mt-6 grid w-full gap-3 md:mt-8 md:grid-cols-2 md:gap-[15px] lg:mt-11 lg:gap-[20px] xl:mt-14 xl:gap-[30px]"
+   >
+      <!-- Card 1 - Experience -->
+      <div data-aos="zoom-in" class="testimonial-card">
+         <div class="testimonial-main-img group flex items-center justify-center bg-primary-50">
+            <i class="fa-solid fa-award text-8xl text-primary transition-all duration-700 group-hover:scale-[1.2]"></i>
+         </div>
+         <div class="testimonial-content">
+            <div class="testimonial-header">
+               <h4 class="text-2xl font-bold text-primary">10+ Years</h4>
+            </div>
+            <h4>Industry Experience</h4>
+            <p class="mb-5">Proven track record across multiple sectors</p>
+            <div class="testimonial-features">
+               <div>
+                  <i class="fa-solid fa-check-circle fa-lg text-primary-400"></i>
+                  <span>Established 2014</span>
+               </div>
+               <div>
+                  <i class="fa-solid fa-star fa-lg text-primary-400"></i>
+                  <span>100+ Projects</span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Card 2 - Quality -->
+      <div data-aos="zoom-in" class="testimonial-card">
+         <div class="testimonial-main-img group flex items-center justify-center bg-secondary-50">
+            <i class="fa-solid fa-medal text-8xl text-secondary transition-all duration-700 group-hover:scale-[1.2]"></i>
+         </div>
+         <div class="testimonial-content">
+            <div class="testimonial-header">
+               <h4 class="text-2xl font-bold text-secondary">Premium</h4>
+            </div>
+            <h4>Quality Standards</h4>
+            <p class="mb-5">Commitment to excellence in every project</p>
+            <div class="testimonial-features">
+               <div>
+                  <i class="fa-solid fa-shield-alt fa-lg text-primary-400"></i>
+                  <span>ISO Certified</span>
+               </div>
+               <div>
+                  <i class="fa-solid fa-tools fa-lg text-primary-400"></i>
+                  <span>Expert Team</span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Card 3 - Comprehensive -->
+      <div data-aos="zoom-in" class="testimonial-card">
+         <div class="testimonial-main-img group flex items-center justify-center bg-primary-50">
+            <i class="fa-solid fa-briefcase text-8xl text-primary transition-all duration-700 group-hover:scale-[1.2]"></i>
+         </div>
+         <div class="testimonial-content">
+            <div class="testimonial-header">
+               <h4 class="text-2xl font-bold text-primary">3-in-1</h4>
+            </div>
+            <h4>Comprehensive Solutions</h4>
+            <p class="mb-5">One partner for all your business needs</p>
+            <div class="testimonial-features">
+               <div>
+                  <i class="fa-solid fa-building fa-lg text-primary-400"></i>
+                  <span>Real Estate</span>
+               </div>
+               <div>
+                  <i class="fa-solid fa-hammer fa-lg text-primary-400"></i>
+                  <span>Construction</span>
+               </div>
+            </div>
+            <div class="testimonial-features mt-3">
+               <div>
+                  <i class="fa-solid fa-laptop-code fa-lg text-primary-400"></i>
+                  <span>Technology</span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Card 4 - Client Focus -->
+      <div data-aos="zoom-in" class="testimonial-card">
+         <div class="testimonial-main-img group flex items-center justify-center bg-secondary-50">
+            <i class="fa-solid fa-handshake text-8xl text-secondary transition-all duration-700 group-hover:scale-[1.2]"></i>
+         </div>
+         <div class="testimonial-content">
+            <div class="testimonial-header">
+               <h4 class="text-2xl font-bold text-secondary">24/7</h4>
+            </div>
+            <h4>Client Support</h4>
+            <p class="mb-5">Dedicated support throughout your journey</p>
+            <div class="testimonial-features">
+               <div>
+                  <i class="fa-solid fa-headset fa-lg text-primary-400"></i>
+                  <span>Always Available</span>
+               </div>
+               <div>
+                  <i class="fa-solid fa-smile fa-lg text-primary-400"></i>
+                  <span>Client Focused</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Why Choose Us section end -->
+ 
+
+    <!-- Contact Us Section Start  -->
+   <!-- Contact Us Section Start  -->
+<section class="section-padding overflow-hidden bg-primary-10" id="contact">
+   <div
+      class="container grid gap-10 px-3 md:grid-cols-10 md:gap-12 lg:gap-16 xl:gap-20 2xl:px-2"
+   >
+      <div
+         data-aos="flip-left"
+         class="flex size-fit flex-col px-5 md:col-span-4 xl:px-0"
+      >
+         <h2 class="heading-2 !mb-0 !text-start xl:!leading-[64px]">
+            Let's Build Your Future Together
+         </h2>
+
+         <div class="mt-4 md:mt-8 lg:mt-14 xl:mt-20">
+            <h4
+              class="text-xl font-medium text-nature-500 md:text-2xl lg:text-3xl xl:text-[34px]"
+            >
+               Get in touch
+            </h4>
+            <p
+               class="mt-1.5 font-poppins text-nature-300 md:mt-2.5 lg:mt-3 lg:text-lg"
+            >
+               Reach out to discuss your real estate, construction, or technology needs. Our team will get back to you within 24 hours.
+            </p>
+            <div
+               class="mt-3.5 flex items-center gap-x-3 md:mt-5 md:gap-x-4 lg:mt-6 lg:gap-x-5 xl:mt-[30px] xl:gap-x-6"
+            >
+               <a
+                  href="#"
+                  class="text-nature-400 transition-all hover:text-[#1877f2]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-square-facebook text-2xl"></i
+               ></a>
+               <a
+                  href="#"
+                  class="text-nature-400 transition-all hover:text-[#c32aa3]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-square-instagram text-2xl"></i
+               ></a>
+               <a
+                  href="#"
+                  class="text-nature-400 transition-all hover:text-[#0a66c2]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin text-2xl"></i
+               ></a>
+               <a
+                  href="#"
+                  class="text-nature-400 transition-all hover:text-black"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-square-x-twitter text-2xl"></i
+               ></a>
+            </div>
+            <div
+               class="mt-5 flex flex-col gap-y-4 md:mt-10 md:gap-y-5 lg:mt-14 lg:gap-y-6 xl:mt-[70px] xl:gap-y-7"
+            >
+               <div class="flex gap-x-2 lg:gap-x-3">
+                  <div
+                     class="flex size-10 items-center justify-center rounded-md bg-primary xl:size-12"
+                  >
+                     <i
+                        class="fa-solid fa-phone-volume text-lg text-white xl:text-xl"
+                     ></i>
+                  </div>
+                  <div class="size-fit">
+                     <a
+                        href="tel:+2348029268174"
+                        class="font-poppins font-medium text-nature-400 transition-all hover:text-primary lg:text-lg"
+                     >
+                        +234 802 926 8174
+                     </a>
+                     <span class="block font-poppins text-sm font-normal text-nature-200"
+                        >Phone support</span
+                     >
+                  </div>
+               </div>
+               <div class="flex gap-x-2 lg:gap-x-3">
+                  <div
+                     class="flex size-10 items-center justify-center rounded-md bg-primary xl:size-12"
+                  >
+                     <i
+                        class="fa-solid fa-envelope text-lg text-white xl:text-xl"
+                     ></i>
+                  </div>
+                  <div class="size-fit">
+                     <a
+                        href="mailto:agosltdcompany@gmail.com"
+                        class="font-poppins font-medium text-nature-400 transition-all hover:text-primary lg:text-lg"
+                     >
+                        agosltdcompany@gmail.com
+                     </a>
+                     <span class="block font-poppins text-sm font-normal text-nature-200"
+                        >Email support</span
+                     >
+                  </div>
+               </div>
+               <div class="flex gap-x-2 lg:gap-x-3">
+                  <div
+                     class="flex size-10 items-center justify-center rounded-md bg-primary xl:size-12"
+                  >
+                     <i
+                        class="fa-solid fa-map-pin text-lg text-white xl:text-xl"
+                     ></i>
+                  </div>
+                  <div class="size-fit">
+                     <p
+                        class="font-poppins font-medium text-nature-400 lg:text-lg"
+                     >
+                        Itebere Street by Redeem Junction
+                     </p>
+                     <span class="font-poppins text-sm font-normal text-nature-200"
+                        >Uvwie, Delta State, Nigeria</span
+                     >
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div
+         data-aos="flip-left"
+         class="rounded-2xl bg-white p-7 pt-12 md:col-span-6"
+      >
+         <form class="grid w-full gap-2.5 md:gap-4 lg:gap-5 xl:gap-6">
+            <div class="w-full">
+               <label
+                  for="name"
+                  class="mb-1.5 block font-poppins text-base font-medium text-nature-600 md:mb-2.5 lg:mb-3"
+                  >Your Name</label
+               >
+               <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="name"
+                  name="name"
+                  required
+                  class="placeholder:font-poppins placeholder:text-sm placeholder:text-nature-50"
+               />
+            </div>
+
+            <div class="grid grid-cols-2 gap-2.5 md:gap-4 lg:gap-5 xl:gap-6">
+               <div class="w-full">
+                  <label
+                     for="email"
+                     class="mb-1.5 block font-poppins text-base font-medium text-nature-600 md:mb-2.5 lg:mb-3"
+                     >Email</label
+                  >
+                  <input
+                     type="email"
+                     placeholder="Enter your email"
+                     id="email"
+                     name="email"
+                     required
+                     class="placeholder:font-poppins placeholder:text-sm placeholder:text-nature-50"
+                  />
+               </div>
+               <div class="w-full">
+                  <label
+                     class="mb-1.5 block font-poppins text-base font-medium text-nature-600 md:mb-2.5 lg:mb-3"
+                     for="phone"
+                     >Phone</label
+                  >
+                  <input
+                     id="phone"
+                     name="phone"
+                     type="tel"
+                     placeholder="Enter your phone"
+                     class="placeholder:font-poppins placeholder:text-sm placeholder:text-nature-50"
+                  />
+               </div>
+            </div>
+
+            <div class="w-full">
+               <label
+                  class="mb-1.5 block font-poppins text-base font-medium text-nature-600 md:mb-2.5 lg:mb-3"
+                  for="service"
+                  >Service Type</label
+               >
+               <select name="service" id="service" required>
+                  <option value="" class="font-poppins text-sm text-nature-50">
+                     Choose service
+                  </option>
+                  <option value="real-estate">Real Estate</option>
+                  <option value="construction">Construction</option>
+                  <option value="technology">Technology Services</option>
+                  <option value="multiple">Multiple Services</option>
+               </select>
+            </div>
+
+            <div class="w-full">
+               <label
+                  class="mb-1.5 block font-poppins text-base font-medium text-nature-600 md:mb-2.5 lg:mb-3"
+                  for="message"
+                  >Message</label
+               >
+               <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Tell us about your project or inquiry"
+                  rows="8"
+                  required
+                  class="max-h-36 placeholder:font-poppins placeholder:text-sm placeholder:text-nature-50 md:max-h-40 lg:max-h-48 xl:max-h-56"
+               ></textarea>
+            </div>
+
+            <div>
+               <button
+                  type="submit"
+                  class="rounded-xl bg-primary px-8 py-3.5 font-poppins font-medium text-white transition-all hover:bg-primary-400 md:px-9 md:py-4 lg:px-10 lg:py-5 lg:text-lg xl:px-11 xl:py-[22px]"
+               >
+                  Send Message
+               </button>
+            </div>
+         </form>
+      </div>
+   </div>
+</section>
+<!-- Contact Us Section End  -->
+    <!-- Contact Us Section End  -->
+
+    <!-- CTA Section Start -->
+   <!-- CTA Section Start -->
+<section class="section-padding">
+   <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      class="container grid max-w-[1600px] items-center gap-5 rounded-[40px] bg-primary bg-[url('assets/map.png')] bg-center bg-no-repeat p-8 text-white md:grid-cols-2 md:p-12 lg:grid-cols-3 lg:p-16 xl:grid-cols-4 xl:p-20 2xl:p-[100px]"
+   >
+      <div class="mx-auto flex h-[300px] w-[300px] items-center justify-center rounded-full bg-white/10 backdrop-blur-sm md:mx-0">
+         <i class="fa-solid fa-rocket text-9xl text-white opacity-90"></i>
+      </div>
+      <div class="xl:col-span-2">
+         <h3
+            class="mb-3 text-center text-3xl font-bold -tracking-tight md:text-start lg:text-4xl xl:text-5xl"
+         >
+            Ready to Start Your Project?
+         </h3>
+         <p
+            class="text-normal text-center font-poppins text-sm md:text-start md:text-base lg:text-lg"
+         >
+            From groundbreaking real estate developments to innovative technology solutions,
+            <br />AGOS Technology brings your vision to life with expertise and excellence.
+         </p>
+      </div>
+      <div
+         class="mx-auto mt-5 md:col-span-2 lg:col-span-1 lg:mt-0 lg:justify-self-end"
+      >
+         <a
+            href="#contact"
+            class="size-fit rounded-full bg-secondary-400 px-7 py-[13px] text-center font-poppins text-sm transition-all hover:bg-secondary md:px-8 md:py-[15px] md:text-base md:font-medium lg:px-9 lg:py-[17px] lg:text-lg lg:font-semibold xl:px-10"
+            >Get Started Today</a
+         >
+      </div>
+   </div>
+</section>
+<!-- CTA Section End -->
+    <!-- CTA Section End -->
+
+    <!-- Footer Section Start -->
+   <!-- Footer Section Start -->
+<footer class="section-padding-t">
+   <div
+      class="container mb-6 grid w-full max-w-[1230px] grid-cols-6 gap-3 px-3 md:mb-10 md:grid-cols-5 lg:mb-14 2xl:px-0"
+   >
+      <div data-aos="fade-up" class="col-span-6 md:col-span-2">
+         <a href="index.html" class="flex items-center gap-x-3">
+            <img src="assets/images/logo.png" alt="AGOS Technology" class="size-fit" />
+         </a>
+
+         <div class="mt-10">
+            <h5 class="mb-5 text-lg font-bold text-nature-600 md:text-xl">
+               Contact Us
+            </h5>
+            <address class="font-poppins text-sm text-nature-400 md:text-base not-italic">
+               Itebere Street by Redeem Junction<br />
+               Uvwie, Delta State, Nigeria
+               <a href="tel:+2348029268174" class="my-2 block transition-all hover:text-primary">+234 802 926 8174</a>
+               <a href="mailto:agosltdcompany@gmail.com" class="transition-all hover:text-primary">agosltdcompany@gmail.com</a>
+            </address>
+         </div>
+      </div>
+      <div
+         data-aos="fade-up"
+         data-aos-delay="150"
+         class="col-span-3 md:col-span-1"
+      >
+         <h5
+            class="mb-2.5 text-lg font-bold text-nature-600 md:mb-3.5 md:text-xl lg:mb-5"
+         >
+            Our Services
+         </h5>
+         <ul
+            class="grid gap-2 font-poppins text-sm text-nature-400 md:gap-3 md:text-base lg:gap-4"
+         >
+            <li class="transition-all hover:text-nature-500">
+               <a href="#real-estate">Real Estate</a>
+            </li>
+            <li class="transition-all hover:text-nature-500">
+               <a href="#construction">Construction</a>
+            </li>
+            <li class="transition-all hover:text-nature-500">
+               <a href="#technology">Technology Services</a>
+            </li>
+            <li class="transition-all hover:text-nature-500">
+               <a href="#projects">Our Projects</a>
+            </li>
+            <li class="transition-all hover:text-nature-500">
+               <a href="#contact">Get a Quote</a>
+            </li>
+         </ul>
+      </div>
+      <div
+         data-aos="fade-up"
+         data-aos-delay="300"
+         class="col-span-3 md:col-span-1"
+      >
+         <h5
+            class="mb-2.5 text-lg font-bold text-nature-600 md:mb-3.5 md:text-xl lg:mb-5"
+         >
+            Quick Links
+         </h5>
+         <ul
+            class="grid gap-2 font-poppins text-sm text-nature-400 md:gap-3 md:text-base lg:gap-4"
+         >
+            <li class="transition-all hover:text-nature-500">
+               <a href="index.html">Home</a>
+            </li>
+            <li class="transition-all hover:text-nature-500">
+               <a href="#about">About Us</a>
+            </li>
+            <li class="transition-all hover:text-nature-500">
+               <a href="#services">Services</a>
+            </li>
+            <li class="transition-all hover:text-nature-500">
+               <a href="#projects">Projects</a>
+            </li>
+            <li class="transition-all hover:text-nature-500">
+               <a href="#contact">Contact</a>
+            </li>
+         </ul>
+      </div>
+      <div
+         data-aos="fade-up"
+         data-aos-delay="450"
+         class="col-span-6 md:col-span-1"
+      >
+         <h5
+            class="mb-2.5 text-lg font-bold text-nature-600 md:mb-3.5 md:text-xl lg:mb-5"
+         >
+            Business Hours
+         </h5>
+         <ul
+            class="grid gap-2 font-poppins text-sm text-nature-400 md:gap-3 md:text-base lg:gap-4"
+         >
+            <li>
+               <span class="font-semibold text-nature-500">Mon - Fri:</span> 8:00 AM - 6:00 PM
+            </li>
+            <li>
+               <span class="font-semibold text-nature-500">Saturday:</span> 9:00 AM - 4:00 PM
+            </li>
+            <li>
+               <span class="font-semibold text-nature-500">Sunday:</span> Closed
+            </li>
+            <li class="mt-3">
+               <a href="#contact" class="inline-block rounded-lg bg-primary px-4 py-2 text-sm text-white transition-all hover:bg-primary-400">
+                  Schedule Consultation
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="container max-w-[1230px]">
+      <hr />
+   </div>
+   <div
+      class="container mb-3.5 mt-5 flex max-w-[1230px] flex-col items-center justify-center gap-y-3.5 px-3 md:mb-6 md:mt-10 md:flex-row md:justify-between lg:mb-9 lg:mt-[54px] 2xl:px-0"
+   >
+      <p class="text-sm leading-[14px] text-nature-400">
+         &copy;2024 AGOS Technology Ltd. All rights reserved.
+      </p>
+      <div class="flex items-center gap-x-4 md:gap-x-7 lg:gap-x-10">
+         <p class="text-sm leading-[14px] text-nature-400">Follow Us</p>
+         <ul class="flex items-center gap-x-4 md:gap-x-7 lg:gap-x-10">
+            <li>
+               <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i
+                     class="fa-brands fa-facebook-f text-sm text-nature-200 transition-all hover:text-[#1877f2] md:text-base lg:text-lg"
+                  ></i
+               ></a>
+            </li>
+            <li>
+               <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i
+                     class="fa-brands fa-x-twitter text-sm text-nature-200 transition-all hover:text-[#000] md:text-base lg:text-lg"
+                  ></i
+               ></a>
+            </li>
+            <li>
+               <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i
+                     class="fa-brands fa-instagram text-sm text-nature-200 transition-all hover:text-[#c32aa3] md:text-base lg:text-lg"
+                  ></i
+               ></a>
+            </li>
+            <li>
+               <a href="#" target="_blank" rel="noopener noreferrer"
+                  ><i
+                     class="fa-brands fa-linkedin-in text-sm text-nature-200 transition-all hover:text-[#0a66c2] md:text-base lg:text-lg"
+                  ></i
+               ></a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</footer>
+<!-- Footer Section End -->
+
+    <!-- NOTE: splitted content -->
+
+    <!-- drawer component -->
+   <!-- drawer component -->
+<div
+   id="drawer-right-example"
+   class="fixed right-0 top-0 z-[60] h-screen w-96 translate-x-full overflow-y-auto border-l bg-white p-10 transition-transform"
+   tabindex="-1"
+   aria-labelledby="drawer-right-label"
+>
+   <a href="index.html">
+      <img src="assets/images/logo.png" alt="AGOS Technology" />
+   </a>
+   <button
+      type="button"
+      data-drawer-hide="drawer-right-example"
+      aria-controls="drawer-right-example"
+      class="group absolute right-10 top-10 inline-flex size-[38px] items-center justify-center rounded-full bg-rose-100 text-sm text-rose-600"
+   >
+      <svg
+         class="size-3.5 transition-transform duration-500 ease-in-out group-hover:rotate-180"
+         aria-hidden="true"
+         xmlns="http://www.w3.org/2000/svg"
+         fill="none"
+         viewBox="0 0 14 14"
+      >
+         <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+         />
+      </svg>
+      <span class="sr-only">Close menu</span>
+   </button>
+
+   <div class="mt-8">
+      <article
+         class="prose prose-ul:m-0 prose-ul:list-none prose-ul:space-y-2.5 prose-ul:pl-0 prose-li:pl-0"
+      >
+         <h3>About AGOS Technology</h3>
+         <p>
+            AGOS Technology Ltd is your trusted partner for comprehensive real estate, construction, and technology solutions across Nigeria. With over a decade of experience, we deliver excellence in every project, combining innovation with proven expertise to bring your vision to life.
+         </p>
+         <h3>Contact Info</h3>
+         <div>
+            <ul>
+               <li>
+                  <h4 class="m-0 font-semibold">Email</h4>
+                  <div class="flex items-center gap-x-1.5">
+                     <span
+                        class="inline-flex size-8 items-center justify-center rounded-md bg-primary-50 text-primary"
+                     >
+                        <i class="fa-solid fa-envelope text-primary"></i>
+                     </span>
+                     <a 
+                        href="mailto:agosltdcompany@gmail.com"
+                        class="text-base leading-none text-slate-500 transition-all hover:text-primary"
+                     >
+                        agosltdcompany@gmail.com
+                     </a>
+                  </div>
+               </li>
+               <li>
+                  <h4 class="m-0 font-semibold">Phone</h4>
+                  <div class="flex items-center gap-x-1.5">
+                     <span
+                        class="inline-flex size-8 items-center justify-center rounded-md bg-primary-50 text-primary"
+                     >
+                        <i class="fa-solid fa-phone text-primary"></i>
+                     </span>
+                     
+                       <a href="tel:+2348029268174"
+                        class="text-base text-slate-500 transition-all hover:text-primary"
+                     >
+                        +234 802 926 8174
+                     </a>
+                  </div>
+               </li>
+               <li>
+                  <h4 class="m-0 font-semibold">Address</h4>
+                  <div class="flex items-center gap-x-1.5">
+                     <span
+                        class="inline-flex size-8 items-center justify-center rounded-md bg-primary-50 text-primary"
+                     >
+                        <i class="fa-solid fa-map-marker-alt text-primary"></i>
+                     </span>
+                     <span class="text-base text-slate-500">
+                        Itebere Street by Redeem Junction, Uvwie, Delta State, Nigeria
+                     </span>
+                  </div>
+               </li>
+            </ul>
+         </div>
+
+         <div class="mt-8">
+            <h3>Follow Us</h3>
+            <menu class="flex items-center gap-x-2.5">
+               <li>
+                  
+                   <a  href="#"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     class="group flex size-10 items-center justify-center rounded-full bg-primary-50"
+                  >
+                     <i
+                        class="fa-brands fa-facebook text-lg text-primary transition-transform duration-700 group-hover:rotate-[360deg] group-hover:scale-125"
+                     ></i>
+                  </a>
+               </li>
+               <li>
+                  
+                    <a href="#"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     class="group flex size-10 items-center justify-center rounded-full bg-primary-50"
+                  >
+                     <i
+                        class="fa-brands fa-x-twitter text-lg text-primary transition-transform duration-700 group-hover:rotate-[360deg] group-hover:scale-125"
+                     ></i>
+                  </a>
+               </li>
+               <li>
+                  
+                   <a  href="#"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     class="group flex size-10 items-center justify-center rounded-full bg-primary-50"
+                  >
+                     <i
+                        class="fa-brands fa-instagram text-lg text-primary transition-transform duration-700 group-hover:rotate-[360deg] group-hover:scale-125"
+                     ></i>
+                  </a>
+               </li>
+               <li>
+                  
+                   <a  href="#"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     class="group flex size-10 items-center justify-center rounded-full bg-primary-50"
+                  >
+                     <i
+                        class="fa-brands fa-linkedin text-lg text-primary transition-transform duration-700 group-hover:rotate-[360deg] group-hover:scale-125"
+                     ></i>
+                  </a>
+               </li>
+            </menu>
+         </div>
+      </article>
+   </div>
+</div>
+
+    <!-- search modal -->
+   
+    <!-- splitd content end -->
+
+    <!-- responsive menu content started -->
+    <div
+      id="responsive-menu"
+      tabindex="-1"
+      aria-labelledby="responsive-menu-label"
+      class="fixed left-0 top-0 z-[60] h-screen w-64 -translate-x-full overflow-y-auto border-r bg-white p-4 transition-transform"
+    >
+      <a href="#">
+        <img src="assets/images/logo.png" />
+      </a>
+      <button
+        type="button"
+        data-drawer-hide="responsive-menu"
+        aria-controls="responsive-menu"
+        class="absolute end-2.5 top-2.5 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+      >
+        <svg
+          class="h-3 w-3"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+          />
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </button>
+      <div class="overflow-y-auto py-4">
+        <ul class="space-y-2 font-medium">
+          <!-- Home -->
+          <li>
+            <a
+              href="index.html"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100"
+            >
+              <i
+                class="fa-solid fa-house h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900"
+              ></i>
+              <span class="ms-3 flex-1 whitespace-nowrap">Home</span>
+            </a>
+          </li>
+
+          <!-- Services -->
+          <li>
+            <button
+              type="button"
+              class="group flex w-full items-center rounded-lg p-2 text-base text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              aria-controls="dropdown-services"
+              data-collapse-toggle="dropdown-services"
+            >
+              <i
+                class="fa-solid fa-briefcase h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900"
+              ></i>
+              <span class="ms-3 flex-1 whitespace-nowrap text-left"
+                >Services</span
+              >
+              <svg
+                class="h-3 w-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+            <ul id="dropdown-services" class="hidden space-y-2 py-2">
+              <li>
+                <a
+                  href="#real-estate"
+                  class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100"
+                >
+                  Real Estate</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#construction"
+                  class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100"
+                >
+                  Construction</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#technology"
+                  class="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100"
+                >
+                  Technology Services</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li>
+            <a
+              href="#about"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100"
+            >
+              <i
+                class="fa-solid fa-circle-info h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900"
+              ></i>
+              <span class="ms-3 flex-1 whitespace-nowrap">About</span>
+            </a>
+          </li>
+
+          <!-- Projects -->
+          <li>
+            <a
+              href="#projects"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100"
+            >
+              <i
+                class="fa-solid fa-diagram-project h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900"
+              ></i>
+              <span class="ms-3 flex-1 whitespace-nowrap">Projects</span>
+            </a>
+          </li>
+
+          <!-- Contact -->
+          <li>
+            <a
+              href="contact.html"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100"
+            >
+              <i
+                class="fa-solid fa-paper-plane h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900"
+              ></i>
+              <span class="ms-3 flex-1 whitespace-nowrap">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Splitted code ended -->
+
+    <!-- Footer Section End -->
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/flowbite.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/odometer.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      AOS.init({
+        delay: 0,
+        duration: 1000,
+      });
+
+      const swiper = new Swiper(".user-reviews-swiper", {
+        slidesPerView: 4,
+        pagination: {
+          el: ".reviews-swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
